@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    /* background-color: rgba(12, 98, 209, 0.829); */
+
+    background-color: rgb(14, 13, 13);
+    color: aliceblue;
+    position: relative;
+}
+
+div,*{
+    transition: all .5s ease;
+}
+
+.navbar_head{
+    display: flex;
+    justify-content:space-between   ;
+    align-items:center;
+    gap:10px;
+    width: 100%;
+}
+
+
+button.toog{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu{
+    transition: all 1s ease;
+}
+
+.zoom{
+    animation: zoom 1s ease-out;
+}
+
+@keyframes zoom {
+    from{
+        /* transform: scale(0); */
+        transform: scaleY(0);
+    }
+    to{
+        /* transform: scale(1); */
+        transform: scaleY(1);
+    }
+}
+
+/* @media screen and (min-width:900px) {
+    
+    .menu{
+    }
+} */
+
+@media screen and (min-width:700px) {
+    button.toog{
+        display: none;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navbar{
+        display: block;
+    }
+    .menu{
+        display: none;
+        /* position: absolute; */
+    }
+    .menu ul,.menu ul li{
+        width: 100%;
+        display: block;
+    }
+    .menu ul li a{
+        width: 100%;
+        display: block;
+        /* background-color: #ddd; */
+    }
+    
+}
+
+
+a{
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+
+li{
+    padding:8px;
+    /* background-color: #010101; */
+    margin: 5px;
+    cursor: pointer;
+}
+
+a:hover{
+    color:aqua;
+}
+
+.histore{
+    width: 100%;
+    padding: 40px;
+    background-color: #010101e1;
+    margin: 0;
+    min-height: 400px;
+    /* height: 200px; */
+    color: #fff;
+}
+
+.personnel{
+
+    padding: 30px;
+    margin-left: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.per{
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.per:hover{
+    transform: scale(1.03);
+}
+
+
+.per .img{
+    width: 100%;
+}
+.per .img img{
+    width:200px;
+    height:200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+padding:8px;
+background-color: rgb(20, 127, 228);
+border-radius: 4px;
+font-weight: 800;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover{
+    color: #ddd;
+}
+button:active{
+    box-shadow: 0 0 0 3px rgb(20, 127, 228),0 0 0 2px #fff;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(49, 93, 133);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3px;
+}
+
+.mis{
+    background-color: rgb(72, 131, 185);
+    padding: 10px;
+    margin: 8px;
+    border-radius: 2px;
+}
+
+.personne{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.678);
+    color:#fff;
+}
+
+.mis:hover{
+    transform: scale(1.03);
+}
+
+
+.footer{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #161616;
+    color: #fff;
+}
+
+.projets,.activity{
+    width: 100%;
+    padding: 20px;
+    background-color: #0d0e0f;
+    color: #fff;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
+.projet{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.projet:hover{
+    transform: scale(1.03);
+}
+
+.projet .img img,.lieu img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+.tourist{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+.tourist-list{
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding: 20px;
+    background-color: #0d0e0f;
+    color: #ffff;
+}
+
+.lieu{
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px 0 #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #010101c7;
+    
+}
+
+.lieu .img{
+    padding: 8px;
+    height:fit-content;
+}
+
+.lieu >div{
+    margin: 3px;
+}
+
+
+@media screen and (max-width:500px) {
+    .personnel,.project-list,.tourist-list{
+        grid-template-columns: repeat(1,1fr);
+        padding: 4px;
+    }
+    .tourist-list .lieu{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .mission,.personnel,.tourist-list,.project-list{
+        grid-template-columns: 100%;
+    }
+}

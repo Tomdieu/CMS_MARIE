@@ -1,0 +1,131 @@
+.editor{
+    padding:9px;
+    box-shadow: 0 0 3px 0 rgb(26, 112, 241);
+    color: black;
+    background-color: aliceblue;
+    min-height: 400px;
+    max-height: 500px;
+    width: 100%;
+    border-radius: 3px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    border: none;
+    outline-style: none;
+}
+
+
+.editor:focus,.editor:focus-visible,.editor:focus-within{
+    box-shadow: 0 0 0 3px rgb(10, 143, 204);
+}
+
+.editor::content{
+    font-size: 1.3em;
+}
+
+.input{
+    width: 100%;
+}
+.input *{
+    width: 100%;
+    display: block;
+}
+
+.input label,.input input[type=text]{
+    margin-left: 5px;
+}
+
+.input input[type=file]{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.input input{
+    padding:8px;
+    border: none;
+    outline-style: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid #eda;
+    font-size: 1.3em;
+}
+
+.success-btn{
+    background-color: rgba(86, 153, 95, 0.867);
+    color: #ffff;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.editor-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor-control .controls{
+    display: flex;
+    justify-content: 'center';
+    align-items: center;
+}
+
+.controls *{
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.controls button,.controls input,.ctrl{
+    width: 50px;
+    height: 100%;
+}
+
+#editor_controls{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#editor_cntrols .ctrl{
+    margin-left: 3px;
+    height: 100%;
+    width: 50px;
+}
+
+input[type=color].ctrl{
+    padding: 8px;
+    margin:0;
+    width: 60px;
+    height: 100%;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span.text-center{
+    text-align: center;
+}
+
+.input a{
+    color:aqua;
+}
+
+.status{
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#status.success{
+
+    color: rgba(76, 230, 89, 0.685);font-weight: 800;background-color: #ddd;
+    opacity: .8;
+}
+
+#status.fail{
+
+    color: rgba(218, 13, 47, 0.685);font-weight: 800;background-color: #ddd;opacity: .8;
+}
